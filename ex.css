@@ -1,0 +1,56 @@
+/*html{
+    font-size: 10px;
+}
+.fonts{
+   font-size: 20px; 
+}*/
+.fonts p{
+    font-size: 1vw;
+}
+.text{
+    background-color: blue;
+    width: 40%;
+}
+.flexy{
+    display: flex;
+}
+div {
+    display: grid;
+  }
+  
+  main{
+    display: grid;
+    grid-template-areas: 
+    "topbar  topbar  topbar "
+    "ads     content  sidebar "
+    "footer  footer    footer ";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50px auto 70px;
+    gap: 0 50px;
+    align-items: centre;
+    justify-items: center;
+  }
+
+    header{ grid-area: topbar;}
+
+    article{grid-area: ads;}
+
+    aside{grid-area: content;}
+
+    nav{grid-area: sidebar;}
+
+    footer{grid-area:footer ;}
+    grid-container {
+        display: grid;
+        grid-template-columns: 100px 200px 300px;
+        grid-template-rows: 100px 200px 300px;
+      }
+      @font-face {
+        font-family: "chathurabold";
+        src: url("../font/chathura_bold_macroman/chachathura-bold-webfont.eot");
+        font-weight: normal;
+        font-style: normal;
+    }
+    .flexy{
+      display: flex;
+    }
